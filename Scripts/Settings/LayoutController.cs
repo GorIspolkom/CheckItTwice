@@ -9,8 +9,15 @@ public class LayoutController : MonoBehaviour
     private KeyboardLayout _defaultKeyboardLayout;
     [SerializeField]
     private KeyboardLayout _customKeyboardLayout;
+    private static LayoutController _instance;
+    public static LayoutController Instance => _instance;
 
     public KeyboardLayout GetKeyboardLayout() => _customKeyboardLayout;
+
+    private void Awake()
+    {
+        _instance = this;
+    }
 
     public void SetDefaultKeyboardLayoyut()
     {

@@ -23,9 +23,9 @@ namespace Assets.Scripts.Player
         {
             if (SessionManager.Instance.IsGameProcess)
             {
-                if (Input.GetKey(KeyCode.D))
+                if (Input.GetKey(LayoutController.Instance.GetKeyboardLayout().moveRight))
                     return 1f * currentSprintImpact;
-                else if (Input.GetKey(KeyCode.A))
+                else if (Input.GetKey(LayoutController.Instance.GetKeyboardLayout().moveLeft))
                     return -1f * currentSprintImpact;
             }
             return 0f;
@@ -35,9 +35,9 @@ namespace Assets.Scripts.Player
         {
             if (SessionManager.Instance.IsGameProcess)
             {
-                if (Input.GetKey(KeyCode.W))
+                if (Input.GetKey(LayoutController.Instance.GetKeyboardLayout().moveForward))
                     return 1f * currentSprintImpact;
-                else if (Input.GetKey(KeyCode.S))
+                else if (Input.GetKey(LayoutController.Instance.GetKeyboardLayout().moveBack))
                     return -1f * currentSprintImpact;
             }
             return 0f;
@@ -46,7 +46,7 @@ namespace Assets.Scripts.Player
         {
             while (this)
             {
-                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.LeftShift));
+                yield return new WaitUntil(() => Input.GetKeyDown(LayoutController.Instance.GetKeyboardLayout().sprint));
                 currentSprintImpact = 2f;
                 while (Input.GetKey(KeyCode.LeftShift) && currentSprintTime > 0)
                 {

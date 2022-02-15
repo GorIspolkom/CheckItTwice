@@ -21,6 +21,7 @@ public class GameHandler : MonoBehaviour
     public SceneHandler sceneManager { get; private set; }
     public UIManager uiManager { get; private set; }
     public AudioSourceManager audioManager { get; private set; }
+    public LayoutController layoutController { get; private set; }
 
     private void Awake()
     {
@@ -133,7 +134,7 @@ public class GameHandler : MonoBehaviour
             SwitchPause();
         else if (Input.GetKeyDown(KeyCode.Space))
             InitializeLevel(0, false);
-        else if (Input.GetKeyDown(KeyCode.J))
+        else if (Input.GetKeyDown(LayoutController.Instance.GetKeyboardLayout().dropItem))
             DropItem();
         else if (Input.mouseScrollDelta.y != 0)
         {
