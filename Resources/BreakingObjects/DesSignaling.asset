@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9768be77f9b11cb42be5c20279658267, type: 3}
+  m_Name: DesSignaling
+  m_EditorClassIdentifier: 
+  ID: 12
+  objectName: DesSignaling
+  useSound: {fileID: 8300000, guid: a9c86b00ac20d5a40ade9384d5436620, type: 3}
+  posibleItem: []
+  brokenModel: {fileID: 8101628311218278650, guid: 0f76422c9c6a40943b49168167e64345, type: 3}
+  fixedModel: {fileID: 8682035126241948846, guid: 01e5ad2f5e41aed4188c5bc5997083e9, type: 3}
+  interactiveTypes: 2

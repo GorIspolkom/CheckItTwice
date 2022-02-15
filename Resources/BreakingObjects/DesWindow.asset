@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9768be77f9b11cb42be5c20279658267, type: 3}
+  m_Name: DesWindow
+  m_EditorClassIdentifier: 
+  ID: 9
+  objectName: DesWindow
+  useSound: {fileID: 8300000, guid: a9c86b00ac20d5a40ade9384d5436620, type: 3}
+  posibleItem:
+  - {fileID: 11400000, guid: 555ef42c1ccaed64c94967f2ed608971, type: 2}
+  brokenModel: {fileID: 1647600631074241594, guid: 6eb15e386f7c5ca4582d8501e0858761, type: 3}
+  fixedModel: {fileID: 1419925058155844175, guid: 429e8b23755110542b27d1e606b7d655, type: 3}
+  interactiveTypes: 3

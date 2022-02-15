@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9768be77f9b11cb42be5c20279658267, type: 3}
+  m_Name: Plate
+  m_EditorClassIdentifier: 
+  ID: 4
+  objectName: Plate
+  useSound: {fileID: 8300000, guid: a9c86b00ac20d5a40ade9384d5436620, type: 3}
+  posibleItem: [{fileID: 11400000, guid: 555ef42c1ccaed64c94967f2ed608971, type: 2},
+    {fileID: 11400000, guid: bfdcd497d10eb574f89766c51bb9fc0b, type: 2}]
+  brokenModel: {fileID: 3964248507047214404, guid: 5464ab8914ea8bd42b0c266f64067f12,
+    type: 3}
+  fixedModel: {fileID: 3269794774712652558, guid: 1c3fb3368c8575d4a997a4e71b38df90,
+    type: 3}
+  interactiveTypes: 0
