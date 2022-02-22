@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 746041a6c17a3bd4089003ce6afcd3bd, type: 3}
-  m_Name: TestLevel
+  m_Name: Tutorial 2 lvl
   m_EditorClassIdentifier: 
-  lvl: 2
-  sceneName: TestScene
-  educationLvl: 0
+  lvl: 1
+  sceneName: Tutorial 2 lvl
+  educationLvl: 1
   maxFixes: 2
-  timer: 120
+  timer: 360
   breakingObjects:
   - Plate
   - Iron
   items:
   - {fileID: 11400000, guid: 555ef42c1ccaed64c94967f2ed608971, type: 2}
+  - {fileID: 11400000, guid: bfdcd497d10eb574f89766c51bb9fc0b, type: 2}

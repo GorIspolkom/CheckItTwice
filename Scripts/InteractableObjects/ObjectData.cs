@@ -8,7 +8,8 @@ namespace Assets.Scripts.InteractableObjects
         Turnable,
         Openable,
         Crashable,
-        Destroyable
+        Destroyable,
+        Switchable
     }
     [CreateAssetMenu(fileName = "BreakingObjectPreset", menuName = "ScriptableObjects/BreakingObjectPreset", order = 3)]
     public class ObjectData : ScriptableObject

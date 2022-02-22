@@ -92,6 +92,11 @@ public class GameHandler : MonoBehaviour
         SessionManager.Instance.NextLevel();
         InitializeLevel(SessionManager.Instance.CurrentLevel, isPause);
     }
+    public void SkipTutorial(bool isPause)
+    {
+        SessionManager.Instance.SkipTutorialLevels();
+        InitializeLevel(SessionManager.Instance.CurrentLevel, isPause);
+    }
     public void InitializeLevel(int lvl, bool isPause)
     {
         LevelPreset[] levelPresets = Resources.LoadAll<LevelPreset>(Paths.Levels);

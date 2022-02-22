@@ -76,6 +76,8 @@ namespace Assets.Scripts.GameLogic
         {
             IsPause = !IsPause;
         }
+        public void SkipTutorialLevels() =>
+            CurrentLevel = 2;
         public void NextLevel() => CurrentLevel++;
         public void FirstLevel() => CurrentLevel = 0;
         public void EndAction()

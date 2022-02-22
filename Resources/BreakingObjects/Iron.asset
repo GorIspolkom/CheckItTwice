@@ -18,4 +18,4 @@ MonoBehaviour:
   posibleItem: []
   brokenModel: {fileID: -1929758510099923267, guid: 89450e80210e1a44091051c4ad59637a, type: 3}
   fixedModel: {fileID: -7457974440175355908, guid: d2bebb8725a92b1469b87dbb67cad566, type: 3}
-  interactiveTypes: 0
+  interactiveTypes: 4

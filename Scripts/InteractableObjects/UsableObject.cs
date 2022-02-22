@@ -9,10 +9,10 @@ namespace Assets.Scripts.InteractableObjects
     {
         public override void Use()
         {
-            if (IsInteractable && SessionManager.Instance.Inventory.Count > 0)
+            if (IsInteractable)
             {
                 Debug.Log("Use an object named - " + objectData.objectName);
-                if (objectData.posibleItem.Length > 0)
+                if (objectData.posibleItem.Length > 0 && SessionManager.Instance.Inventory.Count > 0)
                 {
                     if (IsBreaking)
                         foreach (ItemData neededItem in objectData.posibleItem)
@@ -28,6 +28,11 @@ namespace Assets.Scripts.InteractableObjects
                                 HintManager.Instance.ShowHint(transform, HintType.WrongItem);
                                 GameHandler.Instance.audioManager.PlayWrongSound();
                             }
+                }
+                else if(objectData.interactiveTypes == InteractiveTypes.Switchable)
+                {
+                    Debug.Log("Object are switch");
+                    SetBreaking(false);
                 }
                 else
                 {

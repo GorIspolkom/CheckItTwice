@@ -22,6 +22,7 @@ namespace Assets.Scripts.GameLogic
             List<PickableItem> tmpItems = new List<PickableItem>(FindObjectsOfType<PickableItem>());
             for (int i = 0; i < tmpItems.Count; i++)
                 Destroy(tmpItems[i].gameObject);
+
             int count = posibleItemSpawnPoints.Count;
             foreach (ItemData item in preset.items)
             {
@@ -36,11 +37,13 @@ namespace Assets.Scripts.GameLogic
 
             InteractableObject[] interactableObjects = FindObjectsOfType<InteractableObject>();
             count = interactableObjects.Length;
-            Debug.Log("Usable objects count " + count);
-            Debug.Log(preset.breakingObjects[0]);
+
+            foreach (InteractableObject interactable in interactableObjects)
+                Debug.Log(" Interactable obj name + " + interactable.name);
+
+            //Debug.Log(preset.breakingObjects[0]);
             for (int i = 0; i < count; i++)
             {
-                Debug.Log("Usable object name " + interactableObjects[i].ObjectName);
                 if (!preset.ContainesObject(interactableObjects[i].ObjectName))
                 {
                     count--;
@@ -86,6 +89,7 @@ namespace Assets.Scripts.GameLogic
                     if (item != null)
                         if (item.IsUsable)
                         {
+                            Debug.Log("Item name " + item.name);
                             if (SessionManager.Instance.Inventory.Count < 9)
                                 item.Use();
                             else if (SessionManager.Instance.Inventory.Count == 9)

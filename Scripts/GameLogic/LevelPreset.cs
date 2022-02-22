@@ -9,6 +9,7 @@ namespace Assets.Scripts.GameLogic
     {
         public int lvl;
         public string sceneName;
+        public bool educationLvl;
         public int maxFixes;
         public long timer;
         public string[] breakingObjects;

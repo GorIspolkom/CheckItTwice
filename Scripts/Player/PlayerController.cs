@@ -38,7 +38,7 @@ namespace Assets.Scripts.Player
         // Update is called once per frame
         void FixedUpdate()
         {
-            Debug.Log(inputer.HorizontalVelocity());
+            //Debug.Log(inputer.HorizontalVelocity());
             PrevVelocity = CurrentVellocityDirection;
 
             Vector3 acel = new Vector3(inputer.HorizontalVelocity(), 0, inputer.VerticalVelocity());
@@ -97,8 +97,8 @@ namespace Assets.Scripts.Player
         }
         private void Update()
         {
-            Debug.Log("Game - " + SessionManager.Instance.IsGame);
-            Debug.Log("Pause - " + SessionManager.Instance.IsPause);
+            //Debug.Log("Game - " + SessionManager.Instance.IsGame);
+            //Debug.Log("Pause - " + SessionManager.Instance.IsPause);
         }
     }
 }
