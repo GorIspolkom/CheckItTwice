@@ -17,4 +17,4 @@ MonoBehaviour:
   moveLeft: 97
   moveRight: 100
   moveBack: 115
-  dropItem: 106
+  dropItem: 97
